@@ -103,9 +103,9 @@ export default class Main extends Component {
                 <span className="hangleTime">시간 </span>
                 <span className="time">{minute}</span>
                 <span className="hangleTime">분 </span><br/>
-                <span className="time" style={{"color":"#ffbf80"}}>{second}</span>
+                <span className="time" style={{"color":"#ffad33"}}>{second}</span>
                 <span className="hangleTime">초</span><br/>
-                <span className="percent">{allTimePer}</span>
+                <span className="percent" style={{"color":"#808080"}}>{allTimePer}</span>
                 <span className="hangleTime">%</span><br/><br/>
                 {/* <span>군생활 스타트 : </span>
                 <span>2020</span><span>년</span>
