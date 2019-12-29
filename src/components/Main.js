@@ -102,8 +102,8 @@ export default class Main extends Component {
                 <span className="time">{hour}</span>
                 <span className="hangleTime">시간 </span>
                 <span className="time">{minute}</span>
-                <span className="hangleTime">분 </span>
-                <span className="time">{second}</span>
+                <span className="hangleTime">분 </span><br/>
+                <span className="time" style={{"color":"#ffbf80"}}>{second}</span>
                 <span className="hangleTime">초</span><br/>
                 <span className="percent">{allTimePer}</span>
                 <span className="hangleTime">%</span><br/><br/>
@@ -114,9 +114,11 @@ export default class Main extends Component {
                 <span>14</span><span>시</span> */}
                 <span className="solStart">군생활 시작 : 2020년 1월 6일</span><br/>
                 <span className="solStart">군생활 끝 : 2021년 9월 13일</span>
-                <br/><br/>
+                <br/>
                 <div className="classIn">
                     <span className="cUp">일경 진급</span><br/>
+                    {ilgyeongLeft > 0 
+                    ? <div>
                     <span className="ctime">{ilgyeong.day}</span>
                     <span className="changleTime">일 </span>
                     <span className="ctime">{ilgyeong.hour}</span>
@@ -125,32 +127,53 @@ export default class Main extends Component {
                     <span className="changleTime">분 </span>
                     <span className="ctime">{ilgyeong.second}</span>
                     <span className="changleTime">초</span><br/>
+                    </div>
+                    :<div>
+                        <span className="cUp">2020 / 03 / 01 자로 진급!</span>
+                    </div>}
+                    
                     {/* <span className="cpercent">{ilPer}</span>
                     <span className="changleTime">%</span> */}
                 </div><br/>
                 <div className="classIn">
                     <span className="cUp">상경 진급</span><br/>
-                    <span className="ctime">{sanggyeong.day}</span>
-                    <span className="changleTime">일 </span>
-                    <span className="ctime">{sanggyeong.hour}</span>
-                    <span className="changleTime">시간 </span>
-                    <span className="ctime">{sanggyeong.minute}</span>
-                    <span className="changleTime">분 </span>
-                    <span className="ctime">{sanggyeong.second}</span>
-                    <span className="changleTime">초</span><br/>
+                    {sanggyeongLeft > 0 
+                    ? <div>
+                        <span className="ctime">{sanggyeong.day}</span>
+                        <span className="changleTime">일 </span>
+                        <span className="ctime">{sanggyeong.hour}</span>
+                        <span className="changleTime">시간 </span>
+                        <span className="ctime">{sanggyeong.minute}</span>
+                        <span className="changleTime">분 </span>
+                        <span className="ctime">{sanggyeong.second}</span>
+                        <span className="changleTime">초</span><br/>
+                    </div>
+                     :
+                     <div>
+                         <span className="cUp">2020 / 09 / 01 자로 진급!</span>
+                     </div>
+                     }
                     {/* <span className="cpercent">{sangPer}</span>
                     <span className="changleTime">%</span> */}
                 </div><br/>
                 <div className="classIn">
                     <span className="cUp">수경 진급</span><br/>
-                    <span className="ctime">{sugyeong.day}</span>
-                    <span className="changleTime">일 </span>
-                    <span className="ctime">{sugyeong.hour}</span>
-                    <span className="changleTime">시간 </span>
-                    <span className="ctime">{sugyeong.minute}</span>
-                    <span className="changleTime">분 </span>
-                    <span className="ctime">{sugyeong.second}</span>
-                    <span className="changleTime">초</span><br/>
+                    {sugyeongLeft > 0 
+                    ? <div>
+                        <span className="ctime">{sugyeong.day}</span>
+                        <span className="changleTime">일 </span>
+                        <span className="ctime">{sugyeong.hour}</span>
+                        <span className="changleTime">시간 </span>
+                        <span className="ctime">{sugyeong.minute}</span>
+                        <span className="changleTime">분 </span>
+                        <span className="ctime">{sugyeong.second}</span>
+                        <span className="changleTime">초</span><br/>
+                    </div>
+                    :
+                    <div>
+                        <span className="cUp">2021 / 03 / 01 자로 진급!</span>
+                    </div>
+                    }
                     {/* <span className="cpercent">{suPer}</span>
                     <span className="changleTime">%</span> */}
                 </div>
