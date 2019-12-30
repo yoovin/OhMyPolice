@@ -41,17 +41,17 @@ export default class Main extends Component {
         let leftTime = soldierEndSecond - thisSecond
 
         // Time for ilgyeong
-        const ilgyeongStart = new Date(2020, 2, 1)
+        const ilgyeongStart = new Date(2020, 3, 1)
         const ilgyeongStartSecond = Date.parse(ilgyeongStart)
         let ilgyeongLeftSecond = ilgyeongStartSecond - thisSecond
 
         // Time for sanggyeong
-        const sanggyeongStart = new Date(2020, 8, 1)
+        const sanggyeongStart = new Date(2020, 9, 1)
         const sanggyeongStartSecond = Date.parse(sanggyeongStart)
         let sanggyeongLeftSecond = sanggyeongStartSecond - thisSecond
 
         // Time for sugyeong
-        const sugyeongStart = new Date(2021, 2, 1)
+        const sugyeongStart = new Date(2021, 3, 1)
         const sugyeongStartSecond = Date.parse(sugyeongStart)
         let sugyeongLeftSecond = sugyeongStartSecond - thisSecond
 
@@ -129,7 +129,7 @@ export default class Main extends Component {
                     <span className="changleTime">초</span><br/>
                     </div>
                     :<div>
-                        <span className="cUp">2020 / 03 / 01 자로 진급!</span>
+                        <span className="cUp">2020 / 04 / 01 자로 진급!</span>
                     </div>}
                     
                     {/* <span className="cpercent">{ilPer}</span>
@@ -150,7 +150,7 @@ export default class Main extends Component {
                     </div>
                      :
                      <div>
-                         <span className="cUp">2020 / 09 / 01 자로 진급!</span>
+                         <span className="cUp">2020 / 10 / 01 자로 진급!</span>
                      </div>
                      }
                     {/* <span className="cpercent">{sangPer}</span>
@@ -171,7 +171,7 @@ export default class Main extends Component {
                     </div>
                     :
                     <div>
-                        <span className="cUp">2021 / 03 / 01 자로 진급!</span>
+                        <span className="cUp">2021 / 04 / 01 자로 진급!</span>
                     </div>
                     }
                     {/* <span className="cpercent">{suPer}</span>
