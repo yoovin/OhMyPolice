@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/OhMyPolice/precache-manifest.048d6b09cd618518fadc79e95eba8fd7.js"
+  "/OhMyPolice/precache-manifest.420c52d0530d103d57f71b6b9616f517.js"
 );
 
 self.addEventListener('message', (event) => {
